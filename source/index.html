@@ -1,12 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="page" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    
+<body class="page__body">
+    <header class="header">
+        <ul class="header__site-list_nojs header__site-list_opened">
+            <li class="header__item">Обо мне</li>
+            <li class="header__item">Навыки</li>
+            <li class="header__item">Связаться</li>
+            <li class="header__item">Мои работы</li>
+        </ul>
+        <a class="header__logo-link" href="#">
+            <img class="header__logo" src="img/logo.svg" alt="логотип сайта">
+        </a>
+        <button class="header__toggle">
+            <img src="img/close-toggle.svg" alt="кнопка закрытия">
+        </button>
+    </header>
+    <main class="main">
+        <section class="intro">
+            <img class="intro__photo" src="img/intro-photo.jpg" alt="фото Бочаров Никита">
+            <h2 class="intro__title">Привет, я Бочаров Никита</h2>
+            <p class="intro__text">Frontend разработчик</p>
+            <a class="intro__download" href="">Скачать резюме</a>
+            <a class="intro__my-works" href="">Мои работы</a>
+        </section>
+        <section class="about">
+            <h2 class="about__title">Обо мне</h2>
+            <p class="about__text">Привет! Я начинающий Frontend разработчик.
+                Мои навыки включают HTML, CSS, JavaScript, Git и базовые знания веб-дизайна. Имею опыт работы с различными инструментами разработки, такими как Visual Studio Code, Visual Studio, системой контроля версий GitHub, сборщиком Gulp.
+                Спасибо за просмотр моего портфолио!</p>
+                <ul class="about__list">
+                    <li class="about__item">
+                        <img class="about__icon" src="img/man-icon.svg" alt="">
+                        <p class="about__icon-text">Бочаров Никита Сергеевич</p>
+                    </li>
+                    <li class="about__item">
+                        <img class="about__icon" src="img/mail-icon.svg" alt="">
+                        <p class="about__icon-text">bocharovnikitaa@gmail.com</p>
+                    </li>
+                    <li class="about__item">
+                        <img class="about__icon" src="img/tg-icon.svg" alt="">
+                        <p class="about__icon-text">@bochanikita</p>
+                    </li>
+                    <li class="about__item">
+                        <img class="about__icon" src="img/wapp-icon.svg" alt="">
+                        <p class="about__icon-text">+7 977 340 31 93</p>
+                    </li>
+                </ul>
+        </section>
+        <section class="dirrection">
+            <h2 class="dirrection__title">Направления</h2>
+            <ul class="dirrection__list">
+                <li class="dirrection__item">
+                    <img class="dirrection__item" src="img/softdev-icon.svg" alt="">
+                    <h3 class="dirrection__title">Software Development</h3>
+                </li>
+                <li class="dirrection__item">
+                    <img class="dirrection__item" src="img/webdev-icon.svg" alt="">
+                    <h3 class="dirrection__title">Web Development</h3>
+                </li>
+                <li class="dirrection__item">
+                    <img class="dirrection__item" src="img/design-icon.svg" alt="">
+                    <h3 class="dirrection__title">Web Design</h3>
+                </li>
+            </ul>
+        </section>
+        <section class="skills">
+            <h2 class="skills__title">Навыки</h2>
+            <ul class="skills__list">
+                <li class="skills__item">
+                    <p class="skills__subject">HTML</p>
+                    <p class="skills__value">50%</p>
+                </li>
+                <li class="skills__item">
+                    <p class="skills__subject">CSS</p>
+                    <p class="skills__value">25%</p>
+                </li>
+                <li class="skills__item">
+                    <p class="skills__subject">JS</p>
+                    <p class="skills__value">10%</p>
+                </li>
+                <li class="skills__item">
+                    <p class="skills__subject">PHP</p>
+                    <p class="skills__value">3%</p>
+                </li>
+            </ul>
+        </section>
+        <section class="feedback">
+            <h2 class="feedback__title">Связаться</h2>
+            <form class="feedback__form" action="">
+                <input class="feedback__input" type="text" placeholder="Имя">\
+                <input class="feedback__input" type="text" placeholder="Фамилия">
+                <input class="feedback__input" type="email" placeholder="Email">
+                <input class="feedback__input" type="tel" placeholder="+7 999 99 99">
+            </form>
+            <button class="feedback__submit" type="submit">Отправить</button>
+        </section>
+    </main>
+    <footer class="footer">
+        <ul class="footer__social">
+            <li class="footer__item">
+                <a href="">
+                    <img src="img/github-icon.svg" alt="">
+                </a>
+            </li>
+            <li class="footer__item">
+                <a href="">
+                    <img src="img/tg-foooter-icon.svg" alt="">
+                </a>
+            </li>
+            <li class="footer__item">
+                <a href="">
+                    <img src="img/wapp-footer-icon.svg" alt="">
+                </a>
+            </li>
+        </ul>
+        <div class="footeer__copyright">
+            <p class="footer__text">Иконки взяты с сайта icons8.ru</p>
+            <p class="footer__text">Спасибо за идею © Oyindamola 2020</p>
+        </div>
+    </footer>
 </body>
 </html>
