@@ -1,0 +1,44 @@
+@import 'color-var', 'fonts-var';
+
+.dirrection {
+}
+.dirrection__title {
+    font-size: 32px;
+    line-height: auto;
+    font-weight: 700;
+    color: $main-white;
+    text-align: center;
+}
+.dirrection__list {
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+
+    display: flex;    
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+.dirrection__item {
+    min-width: 318px;
+    min-height: 98px;
+
+    display: flex;
+    align-items: center;
+
+    background-color: $spec-grey;
+    border-radius: 5px;
+}
+.dirrection__icon {
+    padding-left: 14px;
+}
+.dirrection__text {
+    padding-left: 24px;
+    margin: 0;
+
+    font-size: 32px;
+    line-height: auto;
+    font-weight: 500;
+    color: $text-grey;
+}

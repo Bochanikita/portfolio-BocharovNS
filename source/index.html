@@ -4,34 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>Document</title>
 </head>
 <body class="page__body">
     <header class="header">
-        <ul class="header__site-list_nojs header__site-list_opened">
-            <li class="header__item">Обо мне</li>
-            <li class="header__item">Навыки</li>
-            <li class="header__item">Связаться</li>
-            <li class="header__item">Мои работы</li>
-        </ul>
-        <a class="header__logo-link" href="#">
-            <img class="header__logo" src="img/logo.svg" alt="логотип сайта">
-        </a>
-        <button class="header__toggle">
-            <img src="img/close-toggle.svg" alt="кнопка закрытия">
-        </button>
+            <ul class="header__site-list header__site-list_nojs">
+                <li class="header__item"><a class="header__link" href="#">Обо мне</a></li>
+                <li class="header__item"><a class="header__link" href="#">Навыки</a></li>
+                <li class="header__item"><a class="header__link" href="#">Связаться</a></li>
+                <li class="header__item"><a class="header__link" href="#">Мои работы</a></li>
+            </ul>
+            <div class="header__wrapper">
+                <a class="header__logo-link" href="#">
+                    <img class="header__logo" src="img/logo.svg" alt="логотип сайта">
+                </a>
+                <button class="header__toggle header__toggle_close">
+                    <span class="visually-hiden">Кнопка меню</span>
+                </button>
+            </div>
     </header>
     <main class="main">
         <section class="intro">
-            <img class="intro__photo" src="img/intro-photo.jpg" alt="фото Бочаров Никита">
-            <h2 class="intro__title">Привет, я Бочаров Никита</h2>
-            <p class="intro__text">Frontend разработчик</p>
-            <a class="intro__download" href="">Скачать резюме</a>
-            <a class="intro__my-works" href="">Мои работы</a>
+            <div class="content">
+                <div class="intro__flex-wrap">
+                    <img class="intro__photo" src="img/intro-photo.png" alt="фото Бочаров Никита">
+                    <div class="intro__text-wrap">
+                        <h2 class="intro__title">Привет, я<br>Бочаров Никита</h2>
+                        <p class="intro__text">Frontend разработчик</p>
+                        <a class="intro__download" href="">Скачать резюме</a>
+                        <a class="intro__my-works" href="">Мои работы</a>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="about">
-            <h2 class="about__title">Обо мне</h2>
-            <p class="about__text">Привет! Я начинающий Frontend разработчик.
+            <div class="content">
+                <h2 class="about__title">Обо мне</h2>
+                <p class="about__text">Привет! Я начинающий Frontend разработчик.
                 Мои навыки включают HTML, CSS, JavaScript, Git и базовые знания веб-дизайна. Имею опыт работы с различными инструментами разработки, такими как Visual Studio Code, Visual Studio, системой контроля версий GitHub, сборщиком Gulp.
                 Спасибо за просмотр моего портфолио!</p>
                 <ul class="about__list">
@@ -52,21 +62,22 @@
                         <p class="about__icon-text">+7 977 340 31 93</p>
                     </li>
                 </ul>
+            </div> 
         </section>
         <section class="dirrection">
             <h2 class="dirrection__title">Направления</h2>
             <ul class="dirrection__list">
                 <li class="dirrection__item">
-                    <img class="dirrection__item" src="img/softdev-icon.svg" alt="">
-                    <h3 class="dirrection__title">Software Development</h3>
+                    <img class="dirrection__icon" src="img/softdev-icon.svg" width="53px" height="46px" alt="">
+                    <h3 class="dirrection__text">Software<br>Development</h3>
                 </li>
                 <li class="dirrection__item">
-                    <img class="dirrection__item" src="img/webdev-icon.svg" alt="">
-                    <h3 class="dirrection__title">Web Development</h3>
+                    <img class="dirrection__icon" src="img/webdev-icon.svg" alt="">
+                    <h3 class="dirrection__text">Web<br>Development</h3>
                 </li>
                 <li class="dirrection__item">
-                    <img class="dirrection__item" src="img/design-icon.svg" alt="">
-                    <h3 class="dirrection__title">Web Design</h3>
+                    <img class="dirrection__icon" src="img/design-icon.svg" alt="">
+                    <h3 class="dirrection__text">Web Design</h3>
                 </li>
             </ul>
         </section>
@@ -125,5 +136,31 @@
             <p class="footer__text">Спасибо за идею © Oyindamola 2020</p>
         </div>
     </footer>
+    <script>
+        var navMain = document.querySelector('.header__site-list');
+        var navToggle = document.querySelector('.header__toggle');
+
+        navMain.classList.remove('header__site-list_nojs');
+        navToggle.classList.remove('header__toggle_close');
+
+        navMain.classList.add('header__site-list_closed');
+        navToggle.classList.add('header__toggle_open');
+
+        navToggle.addEventListener('click', function() {
+            if (navMain.classList.contains('header__site-list_closed')) {
+                navMain.classList.remove('header__site-list_closed');
+                navToggle.classList.remove('header__toggle_open');
+
+                navMain.classList.add('header__site-list_opened');
+                navToggle.classList.add('header__toggle_close');
+            } else {
+                navMain.classList.add('header__site-list_closed');
+                navToggle.classList.add('header__toggle_open');
+
+                navMain.classList.remove('header__site-list_opened');
+                navToggle.classList.remove('header__toggle_close');
+            }
+        });
+    </script>
 </body>
 </html>
