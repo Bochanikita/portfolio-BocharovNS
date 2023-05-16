@@ -1,0 +1,27 @@
+@import 'color-var', 'fonts-var';
+
+.footer {
+    margin-top: 46px;
+}
+.footer__social-list {
+    list-style: none;
+
+    display: flex;
+    justify-content: space-between;
+    width: 244px;
+
+    margin: 0 auto;
+    padding: 0;
+}
+.footer__item {
+}
+.footeer__copyright {
+    margin-top: 22px;
+}
+.footer__text {
+    font-size: 14px;
+    line-height: auto;
+    font-weight: 400;
+    color: $text-grey;
+    text-align: center;
+}
