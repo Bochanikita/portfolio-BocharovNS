@@ -93,6 +93,12 @@
     line-height: auto;
     text-align: center;
 }
+.intro__download:hover {
+    background-color: $light-grey;
+    color: $main-black;
+    transition: 0.5s;
+}
+
 .intro__my-works {
     display: inline-block;
     width: 143px;
@@ -108,4 +114,9 @@
     font-size: 14px;
     line-height: auto;
     text-align: center;
+}
+.intro__my-works:hover {
+    background-color: $light-grey;
+    color: $main-black;
+    transition: 0.5s;
 }

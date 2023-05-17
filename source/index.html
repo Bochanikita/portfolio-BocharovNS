@@ -10,9 +10,9 @@
 <body class="page__body">
     <header class="header">
             <ul class="header__site-list header__site-list_nojs">
-                <li class="header__item"><a class="header__link" href="#">Обо мне</a></li>
-                <li class="header__item"><a class="header__link" href="#">Навыки</a></li>
-                <li class="header__item"><a class="header__link" href="#">Связаться</a></li>
+                <li class="header__item"><a class="header__link" href="#about">Обо мне</a></li>
+                <li class="header__item"><a class="header__link" href="#skills">Навыки</a></li>
+                <li class="header__item"><a class="header__link" href="#feedback">Связаться</a></li>
             </ul>
             <div class="header__wrapper">
                 <a class="header__logo-link" href="#">
@@ -20,9 +20,9 @@
                     <img class="header__logo-full" src="img/logo-full.svg" alt="логотип сайта">
                 </a>
                 <ul class="header__nav">
-                    <li class="header__nav-item"><a class="header__nav-link" href="#">Обо мне</a></li>
-                    <li class="header__nav-item"><a class="header__nav-link" href="#">Навыки</a></li>
-                    <li class="header__nav-item"><a class="header__nav-link" href="#">Связаться</a></li>
+                    <li class="header__nav-item"><a class="header__nav-link" href="#about">Обо мне</a></li>
+                    <li class="header__nav-item"><a class="header__nav-link" href="#skills">Навыки</a></li>
+                    <li class="header__nav-item"><a class="header__nav-link" href="#feedback">Связаться</a></li>
                 </ul>
                 <button class="header__toggle header__toggle_close">
                     <span class="visually-hiden">Кнопка меню</span>
@@ -46,7 +46,7 @@
         </section>
         <section class="about">
             <div class="content">
-                <h2 class="about__title">Обо мне</h2>
+                <h2 id="about" class="about__title">Обо мне</h2>
                 <p class="about__text">Привет! Я начинающий Frontend разработчик.
                 Мои навыки включают HTML, CSS, JavaScript, Git и базовые знания веб-дизайна. Имею опыт работы с различными инструментами разработки, такими как Visual Studio Code, Visual Studio, системой контроля версий GitHub, сборщиком Gulp.
                 Спасибо за просмотр моего портфолио!</p>
@@ -94,7 +94,7 @@
             
         </section>
         <section class="skills">
-            <h2 class="skills__title">Навыки</h2>
+            <h2 id="skills" class="skills__title">Навыки</h2>
             <div class="content">
                 <ul class="skills__list">
                     <li class="skills__item">
@@ -113,7 +113,7 @@
             </div>
         </section>
         <section class="feedback">
-            <h2 class="feedback__title">Связаться</h2>
+            <h2 id="feedback" class="feedback__title">Связаться</h2>
             <div class="content">
                 <form class="feedback__form" action="">
                     <input class="feedback__input" type="text" placeholder="Имя">

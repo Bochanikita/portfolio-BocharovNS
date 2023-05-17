@@ -36,6 +36,7 @@
     background-color: $main-bg;
     border: none;
     border-bottom: 1px solid $spec-grey;
+    color: $main-white;
 }
 .feedback__input_message {
     width: 100%;
@@ -66,4 +67,9 @@
     font-size: 14px;
     line-height: auto;
     text-align: center;
+}
+.feedback__submit:hover {
+    background-color: $light-grey;
+    color: $main-black;
+    transition: 0.5s;
 }
