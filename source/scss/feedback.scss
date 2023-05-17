@@ -3,6 +3,19 @@
 .feedback {
     margin-top: 46px;
 }
+@media (min-width: 768px) {
+    .feedback {
+        margin-top: 46px;
+    }
+}
+
+@media (min-width: 1240px) {
+    .feedback {
+        margin-top: 112px;
+    }
+}
+
+
 .feedback__title {
     font-size: 32px;
     line-height: auto;

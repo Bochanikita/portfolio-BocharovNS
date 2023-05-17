@@ -13,12 +13,17 @@
                 <li class="header__item"><a class="header__link" href="#">Обо мне</a></li>
                 <li class="header__item"><a class="header__link" href="#">Навыки</a></li>
                 <li class="header__item"><a class="header__link" href="#">Связаться</a></li>
-                <li class="header__item"><a class="header__link" href="#">Мои работы</a></li>
             </ul>
             <div class="header__wrapper">
                 <a class="header__logo-link" href="#">
                     <img class="header__logo" src="img/logo.svg" alt="логотип сайта">
+                    <img class="header__logo-full" src="img/logo-full.svg" alt="логотип сайта">
                 </a>
+                <ul class="header__nav">
+                    <li class="header__nav-item"><a class="header__nav-link" href="#">Обо мне</a></li>
+                    <li class="header__nav-item"><a class="header__nav-link" href="#">Навыки</a></li>
+                    <li class="header__nav-item"><a class="header__nav-link" href="#">Связаться</a></li>
+                </ul>
                 <button class="header__toggle header__toggle_close">
                     <span class="visually-hiden">Кнопка меню</span>
                 </button>
@@ -28,7 +33,8 @@
         <section class="intro">
             <div class="content">
                 <div class="intro__flex-wrap">
-                    <img class="intro__photo" src="img/intro-photo.png" alt="фото Бочаров Никита">
+                    <img class="intro__photo" src="img/intro-photo.png" width="340px" height="416px" alt="фото Бочаров Никита">
+                    <img class="intro__photo-round" src="img/intro-photo-round.png" width="303px" height="310px" alt="фото Бочаров Никита">
                     <div class="intro__text-wrap">
                         <h2 class="intro__title">Привет, я<br>Бочаров Никита</h2>
                         <p class="intro__text">Frontend разработчик</p>
@@ -44,6 +50,9 @@
                 <p class="about__text">Привет! Я начинающий Frontend разработчик.
                 Мои навыки включают HTML, CSS, JavaScript, Git и базовые знания веб-дизайна. Имею опыт работы с различными инструментами разработки, такими как Visual Studio Code, Visual Studio, системой контроля версий GitHub, сборщиком Gulp.
                 Спасибо за просмотр моего портфолио!</p>
+                <p class="about__text-full">Привет! Я начинающий Frontend разработчик.
+                    Мои навыки включают HTML, CSS, JavaScript, Git и базовые знания веб-дизайна. Имею опыт работы с различными инструментами разработки, такими как Visual Studio Code, Visual Studio, системой контроля версий GitHub, сборщиком Gulp. Я продолжаю изучать новые технологии, расширять свои знания и улучшать свои навыки. Я готов к новым проектам и возможностям для развития в сфере Frontend разработки.
+                    Спасибо за просмотр моего портфолио!</p>
                 <ul class="about__list">
                     <li class="about__item">
                         <img class="about__icon" src="img/man-icon.svg" alt="">
@@ -66,41 +75,42 @@
         </section>
         <section class="dirrection">
             <h2 class="dirrection__title">Направления</h2>
-            <ul class="dirrection__list">
-                <li class="dirrection__item">
-                    <img class="dirrection__icon" src="img/softdev-icon.svg" width="53px" height="46px" alt="">
-                    <h3 class="dirrection__text">Software<br>Development</h3>
-                </li>
-                <li class="dirrection__item">
-                    <img class="dirrection__icon" src="img/webdev-icon.svg" alt="">
-                    <h3 class="dirrection__text">Web<br>Development</h3>
-                </li>
-                <li class="dirrection__item">
-                    <img class="dirrection__icon" src="img/design-icon.svg" alt="">
-                    <h3 class="dirrection__text">Web Design</h3>
-                </li>
-            </ul>
+            <div class="content">
+                <ul class="dirrection__list">
+                    <li class="dirrection__item">
+                        <img class="dirrection__icon" src="img/softdev-icon.svg" width="53px" height="46px" alt="">
+                        <h3 class="dirrection__text">Software<br>Development</h3>
+                    </li>
+                    <li class="dirrection__item">
+                        <img class="dirrection__icon" src="img/webdev-icon.svg" alt="">
+                        <h3 class="dirrection__text">Web<br>Development</h3>
+                    </li>
+                    <li class="dirrection__item">
+                        <img class="dirrection__icon" src="img/design-icon.svg" alt="">
+                        <h3 class="dirrection__text">Web Design</h3>
+                    </li>
+                </ul>
+            </div>
+            
         </section>
         <section class="skills">
             <h2 class="skills__title">Навыки</h2>
-            <ul class="skills__list">
-                <li class="skills__item">
-                    <p class="skills__subject">HTML</p>
-                    <p class="skills__value">50%</p>
-                </li>
-                <li class="skills__item">
-                    <p class="skills__subject">CSS</p>
-                    <p class="skills__value">25%</p>
-                </li>
-                <li class="skills__item">
-                    <p class="skills__subject">JS</p>
-                    <p class="skills__value">10%</p>
-                </li>
-                <li class="skills__item">
-                    <p class="skills__subject">PHP</p>
-                    <p class="skills__value">3%</p>
-                </li>
-            </ul>
+            <div class="content">
+                <ul class="skills__list">
+                    <li class="skills__item">
+                        <p class="skills__subject">HTML</p>
+                        <p class="skills__value">50%</p>
+                    </li>
+                    <li class="skills__item">
+                        <p class="skills__subject">CSS</p>
+                        <p class="skills__value">25%</p>
+                    </li>
+                    <li class="skills__item">
+                        <p class="skills__subject">JS</p>
+                        <p class="skills__value">10%</p>
+                    </li>
+                </ul>
+            </div>
         </section>
         <section class="feedback">
             <h2 class="feedback__title">Связаться</h2>
@@ -117,24 +127,29 @@
         </section>
     </main>
     <footer class="footer">
-        <ul class="footer__social-list">
-            <li class="footer__item">
-                <a href="">
-                    <img src="img/github-icon.svg" alt="">
-                </a>
-            </li>
-            <li class="footer__item">
-                <a href="">
-                    <img src="img/tg-foooter-icon.svg" alt="">
-                </a>
-            </li>
-            <li class="footer__item">
-                <a href="">
-                    <img src="img/wapp-footer-icon.svg" alt="">
-                </a>
-            </li>
-        </ul>
-        <div class="footeer__copyright">
+        <div class="footer__story-wrap">
+            <img class="footer__story" src="img/story.svg" alt="">
+        </div>
+        <div class="footer__social-list-wrap">
+            <ul class="footer__social-list">
+                <li class="footer__item">
+                    <a href="">
+                        <img src="img/github-icon.svg" alt="">
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="">
+                        <img src="img/tg-foooter-icon.svg" alt="">
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="">
+                        <img src="img/wapp-footer-icon.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__copyright">
             <p class="footer__text">Иконки взяты с сайта icons8.ru</p>
             <p class="footer__text">Спасибо за идею © Oyindamola 2020</p>
         </div>

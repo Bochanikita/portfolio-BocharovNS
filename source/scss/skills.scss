@@ -3,6 +3,19 @@
 .skills {
     margin-top: 46px;
 }
+@media (min-width: 768px) {
+    .skills {
+        margin-top: 46px;
+    }
+}
+
+@media (min-width: 1240px) {
+    .skills {
+        margin-top: 112px;
+    }
+}
+
+
 .skills__title {
     font-size: 32px;
     line-height: auto;
@@ -32,6 +45,7 @@
     background-color: $spec-grey;
     border-radius: 5px;
 }
+
 .skills__subject {
     padding-left: 14px;
 
